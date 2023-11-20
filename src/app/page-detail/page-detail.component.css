@@ -1,0 +1,58 @@
+/* Sezione container */
+
+.container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.containerTot {
+  height: 100%;
+  width: auto;
+}
+
+.containerOverRide {
+  height: auto;
+}
+/* Sezione Alfabeto*/
+
+button {
+  width: auto;
+}
+
+hr {
+  height: 15%;
+  width: 100%;
+  color: red;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.description {
+  font-size: 20px;
+  color: white;
+}
+
+.card {
+  width: 15rem;
+  height: auto;
+}
+
+.row.center-row {
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  size: 4rem;
+  color: red;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

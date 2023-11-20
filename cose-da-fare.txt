@@ -1,0 +1,6 @@
+Cose non ancora gestite:
+-gestione ricerca per lat&lon
+-mostrare le informazioni in page-detail
+-cercare un altro modo per passare al routerLink più parametri senza gli / di mezzo
+Cose Gestite:
+-RouterLink per Torino/Genova/Milano

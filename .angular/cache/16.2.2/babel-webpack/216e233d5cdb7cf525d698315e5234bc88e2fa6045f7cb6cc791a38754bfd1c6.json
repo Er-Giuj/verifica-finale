@@ -1,0 +1,42 @@
+{
+  "ast": null,
+  "code": "var _class;\nimport * as i0 from \"@angular/core\";\nimport * as i1 from \"@angular/common/http\";\nimport * as i2 from \"@angular/router\";\nexport class AppComponent {\n  constructor(http) {\n    this.http = http;\n    // Nuova parte,Utilizzo servizi http\n    // -------------------------------------------------------------------------------\n    // non lasciare mai la tipizzazione 'any', deve essere di tipizzazione 'Fatture[]' che è un interfaccia di tipizzazione\n    this.drinks = [];\n  }\n  ngOnInit() {}\n}\n_class = AppComponent;\n_class.ɵfac = function AppComponent_Factory(t) {\n  return new (t || _class)(i0.ɵɵdirectiveInject(i1.HttpClient));\n};\n_class.ɵcmp = /*@__PURE__*/i0.ɵɵdefineComponent({\n  type: _class,\n  selectors: [[\"app-root\"]],\n  decls: 12,\n  vars: 0,\n  consts: [[\"lang\", \"en\"], [\"charset\", \"UTF-8\"], [\"name\", \"viewport\", \"content\", \"width=device-width, initial-scale=1.0\"]],\n  template: function AppComponent_Template(rf, ctx) {\n    if (rf & 1) {\n      i0.ɵɵtext(0, \"\\n\");\n      i0.ɵɵelementStart(1, \"html\", 0)(2, \"head\");\n      i0.ɵɵelement(3, \"meta\", 1)(4, \"meta\", 2);\n      i0.ɵɵelementStart(5, \"title\");\n      i0.ɵɵtext(6, \"TheDrinkDB\");\n      i0.ɵɵelementEnd()();\n      i0.ɵɵelementStart(7, \"body\");\n      i0.ɵɵelement(8, \"router-outlet\");\n      i0.ɵɵelementEnd()();\n      i0.ɵɵtext(9, \"\\n=======\\n\");\n      i0.ɵɵelement(10, \"router-outlet\");\n      i0.ɵɵtext(11, \"\\n>>>>>>> e28bc1c779b2ec289ba42a9d874647779ada8ae0\\n\");\n    }\n  },\n  dependencies: [i2.RouterOutlet],\n  encapsulation: 2\n});",
+  "map": {
+    "version": 3,
+    "names": [
+      "AppComponent",
+      "constructor",
+      "http",
+      "drinks",
+      "ngOnInit",
+      "i0",
+      "ɵɵdirectiveInject",
+      "i1",
+      "HttpClient",
+      "selectors",
+      "decls",
+      "vars",
+      "consts",
+      "template",
+      "AppComponent_Template",
+      "rf",
+      "ctx",
+      "ɵɵtext",
+      "ɵɵelementStart",
+      "ɵɵelement",
+      "ɵɵelementEnd"
+    ],
+    "sources": [
+      "C:\\Users\\silba\\Desktop\\Angular\\esercizio-servizzi\\src\\app\\app.component.ts",
+      "C:\\Users\\silba\\Desktop\\Angular\\esercizio-servizzi\\src\\app\\app.component.html"
+    ],
+    "sourcesContent": [
+      "import { HttpClient } from \"@angular/common/http\";\nimport { Component, OnInit } from \"@angular/core\";\nimport { HttpClientModule } from \"@angular/common/http\";\n\n@Component({\n  selector: \"app-root\",\n  templateUrl: \"./app.component.html\",\n  // styleUrls: [\"../../style.css\"],\n})\nexport class AppComponent implements OnInit {\n  // Nuova parte,Utilizzo servizi http\n  // -------------------------------------------------------------------------------\n  // non lasciare mai la tipizzazione 'any', deve essere di tipizzazione 'Fatture[]' che è un interfaccia di tipizzazione\n  drinks: any = [];\n  constructor(private http: HttpClient) {}\n\n  ngOnInit(): void {}\n}\n\n/*\nCopyright Google LLC. All Rights Reserved.\nUse of this source code is governed by an MIT-style license that\ncan be found in the LICENSE file at https://angular.io/license\n*/\n/*\n  class CarelloService{\n    private prodotti:Prodotti[]=[];\n    private totale = 0;\n\n    aggiungiProdotto(prodotto:Prodotto){\n      this.prodotti.push(prodotto);\n      this.totale += prodotto.prezzo + prodotto.quantita;\n    }\n    eliminaProdotto(prodotto:Prodotto){}\n    cambiaQUantita(idProdotto:string, nuovaQuantita:number){}\n    svuotaCarello(){}\n    getProdotti(){return this.prodotti}\n    getTotale(){\n      return this.totale;\n    }\n    ricarcolaTotale(){}\n  }\n*/\n",
+      "\r\n<!--  -->\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>TheDrinkDB</title>\r\n</head>\r\n\r\n<body>\r\n    <router-outlet></router-outlet>\r\n</body>\r\n\r\n</html>\r\n=======\r\n<router-outlet></router-outlet>\r\n>>>>>>> e28bc1c779b2ec289ba42a9d874647779ada8ae0\r\n"
+    ],
+    "mappings": ";;;;AASA,OAAM,MAAOA,YAAY;EAKvBC,YAAoBC,IAAgB;IAAhB,KAAAA,IAAI,GAAJA,IAAI;IAJxB;IACA;IACA;IACA,KAAAC,MAAM,GAAQ,EAAE;EACuB;EAEvCC,QAAQA,CAAA,GAAU;;SAPPJ,YAAY;;mBAAZA,MAAY,EAAAK,EAAA,CAAAC,iBAAA,CAAAC,EAAA,CAAAC,UAAA;AAAA;;QAAZR,MAAY;EAAAS,SAAA;EAAAC,KAAA;EAAAC,IAAA;EAAAC,MAAA;EAAAC,QAAA,WAAAC,sBAAAC,EAAA,EAAAC,GAAA;IAAA,IAAAD,EAAA;MCTzBV,EAAA,CAAAY,MAAA,qBACA;MAEAZ,EAAA,CAAAa,cAAA,cAAgB;MAGZb,EAAA,CAAAc,SAAA,cAAwB;MAExBd,EAAA,CAAAa,cAAA,YAAO;MAAAb,EAAA,CAAAY,MAAA,iBAAU;MAAAZ,EAAA,CAAAe,YAAA,EAAQ;MAG7Bf,EAAA,CAAAa,cAAA,WAAM;MACFb,EAAA,CAAAc,SAAA,oBAA+B;MACnCd,EAAA,CAAAe,YAAA,EAAO;MAGPf,EAAA,CAAAY,MAAA,kBACA;MAAAZ,EAAA,CAAAc,SAAA,qBAA+B;MAC/Bd,EAAA,CAAAY,MAAA,4DACA"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

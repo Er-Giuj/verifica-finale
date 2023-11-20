@@ -1,0 +1,66 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+  crossorigin="anonymous"
+/>
+<div class="containerTot">
+  <!-- Sezione Titolo -->
+  <div class="container mb-2 d-flex">
+    <div class="col-6 text-center">Meteo</div>
+    <div class="col-6 text-center">Foto Meteo</div>
+  </div>
+  <!-- Sezione Form -->
+  <div class="container">
+    <form name="ngForm" (ngSubmit)="SearchCoords()"></form>
+    <!-- Sezione Lat -->
+    <div class="row p-2">
+      <div class="col-6">
+        <p>Lat:</p>
+      </div>
+      <div class="col-6">
+        <input
+          class="form-control me-2"
+          [(ngModel)]="lat"
+          type="number"
+          placeholder="0"
+          aria-label="Search"
+        />
+      </div>
+    </div>
+    <!-- Sezione Lon -->
+    <div class="row p-2">
+      <div class="col-6">
+        <p>Lon:</p>
+      </div>
+      <div class="col-6">
+        <input
+          class="form-control me-2"
+          [(ngModel)]="lon"
+          type="number"
+          placeholder="0"
+          aria-label="Search"
+        />
+      </div>
+    </div>
+    <!-- Sezione Bottone Submit-->
+    <div class="row p-2">
+      <div class="col-12">
+        <button type="submit" [routerLink]="['detail', lat, lon]">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Sezione Città Predefinite -->
+  <div class="containter">
+    <div class="row">
+      <div class="col-6">
+        <a routerLink="/home/page-detail/45°04'24/7°40'32"><p>Torino</p></a>
+      </div>
+      <div class="col-6">
+        <a routerLink="/home/page-detail/45°04'24/7°40'32"><p>Genova</p></a>
+      </div>
+    </div>
+  </div>
+</div>
